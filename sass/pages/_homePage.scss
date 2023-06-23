@@ -1,0 +1,128 @@
+// Header
+
+header{
+    .headerLocalisation{
+        padding: 15.5px 118.5px;
+        background-color: $lightGrey;
+        @extend %flexCenter;
+    
+        i{
+            color: $darkGrey;
+            margin-right: 17px;
+        }
+
+        p{
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .headerIntro{
+        background-color: $veryLigthGrey;
+        padding: 39px 26px 57px 34px;
+        text-align: center;
+
+        div{
+            font-size: $sizeTitle;
+            font-weight: 700;
+            line-height: 28.13px;
+        }
+
+        h1{
+            color: $darkGrey;
+            font-size: $sizeSubTitle;
+            font-weight: 300;
+            line-height: 21.9px;
+        }
+
+        button{
+            @extend %gradientButton;
+            margin-top: 27px;
+        }
+
+        button:hover{
+            @extend %buttonHoverGradient;
+        }
+    }
+}
+
+// Fonctionnement
+
+section.sectionHowItWorks{
+    padding: 48px 20px 68px 20px;
+    
+    h2{
+        font-size: $sizeTitle;
+        font-weight: 700;
+        margin: 0 0 26px 0;
+    }
+
+    .sectionHowItWorksList{
+        position: relative;
+        @extend %flexCenter;
+        border-radius: 20px;
+        height: 72px;
+        width: 322px;
+        background: $lightGreyBackground;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        margin-bottom: 24.90px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .sectionNumber{
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            bottom: 50%;
+            @extend %flexCenter;
+            
+            .numberCircle{
+                @extend %flexCenter;
+                width: 24px;
+                height: 24px;
+                background-color: $purple;
+                border-radius: 50%;
+            }
+            
+            .number{
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            
+        }
+
+        h3{
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .sectionIcon{
+            margin-right: 27px;
+        }
+
+        i{
+            display: block;
+            color: $grey;
+            font-size: 16px;
+        }
+        
+        
+    }
+
+    
+}
+
+//Restaurant
+
+main.restaurantList{
+    background-color: $veryLigthGrey;
+    padding: 54px 18px 66px 18px;
+
+    h2{
+        font-weight: 700;
+        font-size: $sizeTitle;
+    }
+}

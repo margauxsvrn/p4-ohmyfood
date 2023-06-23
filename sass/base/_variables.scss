@@ -1,0 +1,29 @@
+// Colors
+$greenLight:#99E2D0;
+$greenDark:#008766;
+$blueLight:#89C8FA;
+$blueDark:#003A68;
+$purple:#9356DC;
+$white:#FFFFFF;
+$black:#000000;
+$darkGrey:#353535;
+$grey:#7E7E7E;
+$lightGrey:#EAEAEA;
+$veryLigthGrey:#F7F7F7;
+$lightGreyBackground:#F6F6F6;
+
+    //Background colors 
+    $backgroundGradient:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    $buttonHoverGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    
+
+//Fonts
+$fontTitle:'Shrikhand', cursive;
+$fontText:'Roboto', sans-serif;
+
+//Font Sizes
+$sizeText:16px;
+$sizeSubTitle:18px;
+$sizeTitle:24px;
+$sizeBigTitle:28px;

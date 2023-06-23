@@ -1,0 +1,44 @@
+// Button gradient 
+
+%backgroundGradient{
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+%buttonHoverGradient{
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+}
+
+%gradientButton{
+    @extend %backgroundGradient;
+    padding:13px 18.5px;
+    height: 50px;
+    color:$white;
+    border-radius:25px;
+    border:none;
+    font-family: $fontText;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+// Info button
+
+%infoButton{
+    padding: 7px 9px;
+    border: none;
+    border-radius: 2px;
+    height: 29px;
+    color:$greenDark;
+    background-color: $greenLight;
+    font-family: $fontText;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+// Flexbox center
+
+%flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

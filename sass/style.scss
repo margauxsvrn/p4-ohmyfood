@@ -1,0 +1,13 @@
+@import "base/variables";
+@import "base/_globalSettings";
+
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "components/buttons";
+@import "components/restaurantCards";
+
+@import "layout/navbar";
+@import "layout/footer";
+
+@import "pages/homePage";
+@import "pages/restaurants";

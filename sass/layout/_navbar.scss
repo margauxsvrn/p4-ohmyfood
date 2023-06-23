@@ -1,0 +1,13 @@
+nav{
+    height: 63px;
+    padding: 14px 89px;
+    @extend %flexCenter;
+}
+
+nav img{
+    margin-right: auto;
+    margin-left: auto;
+    width: 197px;
+    height:36px;
+    display: block;
+}
