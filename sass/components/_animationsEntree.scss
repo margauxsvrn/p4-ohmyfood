@@ -1,0 +1,108 @@
+/* Page restaurant - Animation select plat */
+
+/* SECTION ENTREE */
+
+.restaurantMenuEntreeElement {
+    position: relative;
+    overflow: hidden;
+
+    .selectItem {
+        display: none;
+    }
+
+    .selectLabel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #selectSection {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: $greenLight;
+        border-radius: 15px;
+        transition: width 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+
+        i {
+            color: $white;
+        }
+    }
+
+    .entreePrix {
+        transition: transform 0.4s ease;
+        height: 100%;
+    }
+
+    .selectItem:checked~#selectSection {
+        width: 59px;
+    }
+
+
+    /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
+    On décale seulement l'entreePrix vers la gauche */
+    #checkboxEntree1:checked~.entreeDescriptifPrix .entreePrix {
+        transform: translateX(-59px);
+    }
+
+    /* Ajout du fond blanc derrière le prix */
+    #checkboxEntree1:checked~.entreeDescriptifPrix .entreePrix::before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: -13px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134453782) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+        z-index: -1;
+        width: 75px;
+        height: 72px;
+    }
+
+    /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+    #checkboxEntree2:checked~.entreeDescriptifPrix .entreePrix {
+        transform: translateX(-59px);
+        /* On décale seulement l'entreePrix vers la gauche */
+    }
+
+    /* Ajout du fond blanc derrière le prix */
+    #checkboxEntree2:checked~.entreeDescriptifPrix .entreePrix::before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: -13px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134453782) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+        z-index: -1;
+        width: 75px;
+        height: 72px;
+    }
+
+    /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+    #checkboxEntree3:checked~.entreeDescriptifPrix .entreePrix {
+        transform: translateX(-59px);
+        /* On décale seulement l'entreePrix vers la gauche */
+    }
+
+    /* Ajout du fond blanc derrière le prix */
+    #checkboxEntree3:checked~.entreeDescriptifPrix .entreePrix::before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: -13px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134453782) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+        z-index: -1;
+        width: 75px;
+        height: 72px;
+    }
+}

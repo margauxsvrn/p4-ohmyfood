@@ -307,6 +307,7 @@ main.restaurantMenu article .restaurantMenuEntree .restaurantMenuEntreeElement .
 main.restaurantMenu article .restaurantMenuEntree .restaurantMenuEntreeElement .entreeDescriptifPrix .entreePrix {
   font-weight: 700;
   margin-left: 20px;
+  background-color: #FFFFFF;
 }
 main.restaurantMenu article .restaurantMenuPlat {
   margin-bottom: 40px;
@@ -402,6 +403,288 @@ main.restaurantMenu button {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Page restaurant - Animation select plat */
+/* SECTION ENTREE */
+.restaurantMenuEntreeElement {
+  position: relative;
+  overflow: hidden;
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
+  On décale seulement l'entreePrix vers la gauche */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+}
+.restaurantMenuEntreeElement .selectItem {
+  display: none;
+}
+.restaurantMenuEntreeElement .selectLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.restaurantMenuEntreeElement #selectSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 15px;
+  transition: width 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.restaurantMenuEntreeElement #selectSection i {
+  color: #FFFFFF;
+}
+.restaurantMenuEntreeElement .entreePrix {
+  transition: transform 0.4s ease;
+  height: 100%;
+}
+.restaurantMenuEntreeElement .selectItem:checked ~ #selectSection {
+  width: 59px;
+}
+.restaurantMenuEntreeElement #checkboxEntree1:checked ~ .entreeDescriptifPrix .entreePrix {
+  transform: translateX(-59px);
+}
+.restaurantMenuEntreeElement #checkboxEntree1:checked ~ .entreeDescriptifPrix .entreePrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuEntreeElement #checkboxEntree2:checked ~ .entreeDescriptifPrix .entreePrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'entreePrix vers la gauche */
+}
+.restaurantMenuEntreeElement #checkboxEntree2:checked ~ .entreeDescriptifPrix .entreePrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuEntreeElement #checkboxEntree3:checked ~ .entreeDescriptifPrix .entreePrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'entreePrix vers la gauche */
+}
+.restaurantMenuEntreeElement #checkboxEntree3:checked ~ .entreeDescriptifPrix .entreePrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+
+/* Page restaurant - Animation select plat */
+/* SECTION PLATS */
+.restaurantMenuPlatElement {
+  position: relative;
+  overflow: hidden;
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
+  On décale seulement l'PlatPrix vers la gauche */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+}
+.restaurantMenuPlatElement .selectItem {
+  display: none;
+}
+.restaurantMenuPlatElement .selectLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.restaurantMenuPlatElement #selectSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 15px;
+  transition: width 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.restaurantMenuPlatElement #selectSection i {
+  color: #FFFFFF;
+}
+.restaurantMenuPlatElement .platPrix {
+  transition: transform 0.4s ease;
+  height: 100%;
+}
+.restaurantMenuPlatElement .selectItem:checked ~ #selectSection {
+  width: 59px;
+}
+.restaurantMenuPlatElement #checkboxPlat1:checked ~ .platDescriptifPrix .platPrix {
+  transform: translateX(-59px);
+}
+.restaurantMenuPlatElement #checkboxPlat1:checked ~ .platDescriptifPrix .platPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuPlatElement #checkboxPlat2:checked ~ .platDescriptifPrix .platPrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'PlatPrix vers la gauche */
+}
+.restaurantMenuPlatElement #checkboxPlat2:checked ~ .platDescriptifPrix .platPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuPlatElement #checkboxPlat3:checked ~ .platDescriptifPrix .platPrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'PlatPrix vers la gauche */
+}
+.restaurantMenuPlatElement #checkboxPlat3:checked ~ .platDescriptifPrix .platPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+
+/* Page restaurant - Animation select Dessert */
+/* SECTION DESSERTS */
+.restaurantMenuDessertElement {
+  position: relative;
+  overflow: hidden;
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
+  On décale seulement l'DessertPrix vers la gauche */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+  /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection */
+  /* Ajout du fond blanc derrière le prix */
+}
+.restaurantMenuDessertElement .selectItem {
+  display: none;
+}
+.restaurantMenuDessertElement .selectLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.restaurantMenuDessertElement #selectSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 15px;
+  transition: width 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.restaurantMenuDessertElement #selectSection i {
+  color: #FFFFFF;
+}
+.restaurantMenuDessertElement .dessertPrix {
+  transition: transform 0.4s ease;
+  height: 100%;
+}
+.restaurantMenuDessertElement .selectItem:checked ~ #selectSection {
+  width: 59px;
+}
+.restaurantMenuDessertElement #checkboxDessert1:checked ~ .dessertDescriptifPrix .dessertPrix {
+  transform: translateX(-59px);
+}
+.restaurantMenuDessertElement #checkboxDessert1:checked ~ .dessertDescriptifPrix .dessertPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuDessertElement #checkboxDessert2:checked ~ .dessertDescriptifPrix .dessertPrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'DessertPrix vers la gauche */
+}
+.restaurantMenuDessertElement #checkboxDessert2:checked ~ .dessertDescriptifPrix .dessertPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
+}
+.restaurantMenuDessertElement #checkboxDessert3:checked ~ .dessertDescriptifPrix .dessertPrix {
+  transform: translateX(-59px);
+  /* On décale seulement l'DessertPrix vers la gauche */
+}
+.restaurantMenuDessertElement #checkboxDessert3:checked ~ .dessertDescriptifPrix .dessertPrix::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4668461134) 0%, rgb(255, 255, 255) 21%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+  width: 75px;
+  height: 72px;
 }
 
 /*# sourceMappingURL=style.css.map */
