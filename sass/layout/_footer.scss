@@ -1,0 +1,30 @@
+footer{
+    background-color: $darkGrey;
+    padding: 22px 25px;
+    font-size: $sizeText;
+    color: $white;
+    font-weight: 500;
+    
+    svg path{
+        fill: $white;
+    }
+
+    .footerMenu{
+        list-style: none;
+        margin: 16px 0 0 0;
+        padding: 0;
+
+        li{
+            margin-bottom: 7px;
+        }
+
+        i{
+            margin-right: 9px;
+        }
+
+        .footerMenuThin{
+            font-weight: 400;
+        }
+    }
+
+}

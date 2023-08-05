@@ -1,0 +1,210 @@
+/* Header */
+header .headerPicture img {
+    height: 275px;
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+}
+
+main.restaurantMenu {
+    background-color: $lightGreyBackground;
+    padding: 32px 17px 40px 17px;
+    margin-top: -55px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+
+    .restaurantTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 42px;
+
+        h1 {
+            font-family: $fontTitle;
+            font-size: $sizeBigTitle;
+            font-style: italic;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+        }
+
+        i {
+            margin-left: 30px;
+            font-size: 22px;
+        }
+    }
+
+    /* Section Entrée */
+    article .restaurantMenuEntree {
+        margin-bottom: 40px;
+    
+        h2 {
+        font-weight: 300;
+        font-size: $sizeText;
+        }
+
+        hr {
+            width: 40px;
+            height: 3px;
+            background-color: $greenLight;
+            border: none;
+            box-shadow: none;
+            text-align: left;
+            margin: -5px 0 12px 0;
+        }
+
+        .restaurantMenuEntreeElement{
+            background-color: $white;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+            ;
+            border-radius: 15px;
+            padding: 13.5px 15px;
+            margin-bottom:12px;
+
+            h3{
+                font-weight: 500;
+                font-size: $sizeSubTitle;
+                margin: 0;
+                padding: 0;
+            }
+
+            p{
+                font-weight: 300;
+                margin: 0;
+                padding: 0;
+            }
+
+            .entreeDescriptifPrix{
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+                margin-top: 5px;
+                
+                .entreePrix{
+                    font-weight: 700;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+     /* Section Plat */
+     article .restaurantMenuPlat {
+        margin-bottom: 40px;
+    
+        h2 {
+        font-weight: 300;
+        font-size: $sizeText;
+        }
+
+        hr {
+            width: 40px;
+            height: 3px;
+            background-color: $greenLight;
+            border: none;
+            box-shadow: none;
+            text-align: left;
+            margin: -5px 0 12px 0;
+        }
+
+        .restaurantMenuPlatElement{
+            background-color: $white;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+            ;
+            border-radius: 15px;
+            padding: 13.5px 15px;
+            margin-bottom:12px;
+
+            h3{
+                font-weight: 500;
+                font-size: $sizeSubTitle;
+                margin: 0;
+                padding: 0;
+            }
+
+            p{
+                font-weight: 300;
+                margin: 0;
+                padding: 0;
+            }
+
+            .platDescriptifPrix{
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+                margin-top: 5px;
+                
+                .platPrix{
+                    font-weight: 700;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    /* Section Dessert */
+    article .restaurantMenuDessert {
+        margin-bottom: 40px;
+    
+        h2 {
+        font-weight: 300;
+        font-size: $sizeText;
+        }
+
+        hr {
+            width: 40px;
+            height: 3px;
+            background-color: $greenLight;
+            border: none;
+            box-shadow: none;
+            text-align: left;
+            margin: -5px 0 12px 0;
+        }
+
+        .restaurantMenuDessertElement{
+            background-color: $white;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+            ;
+            border-radius: 15px;
+            padding: 13.5px 15px;
+            margin-bottom:12px;
+
+            h3{
+                font-weight: 500;
+                font-size: $sizeSubTitle;
+                margin: 0;
+                padding: 0;
+            }
+
+            p{
+                font-weight: 300;
+                margin: 0;
+                padding: 0;
+            }
+
+            .dessertDescriptifPrix{
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+                margin-top: 5px;
+                
+                .dessertPrix{
+                    font-weight: 700;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    /* Bouton commander */
+
+    button{
+        @extend %gradientButton;
+        padding: 16px 48px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
