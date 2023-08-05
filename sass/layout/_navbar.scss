@@ -2,6 +2,19 @@ nav{
     height: 63px;
     padding: 14px 89px;
     @extend %flexCenter;
+    position: relative;
+
+    /* Page restaurant */
+    a{
+        color: $darkGrey;
+    }
+
+    div i{
+        font-size: 30px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
 }
 
 nav img{

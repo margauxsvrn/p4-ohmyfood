@@ -44,6 +44,7 @@ section.sectionHowItWorks .sectionHowItWorksList .sectionNumber .numberCircle, s
   justify-content: center;
 }
 
+/* Home Page */
 main.restaurantList article {
   position: relative;
   height: 251px;
@@ -90,6 +91,17 @@ main.restaurantList article .restaurantDetails i {
 nav {
   height: 63px;
   padding: 14px 89px;
+  position: relative;
+  /* Page restaurant */
+}
+nav a {
+  color: #353535;
+}
+nav div i {
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
 }
 
 nav img {
