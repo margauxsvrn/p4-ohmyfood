@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La note enchantée</title>
+    <title>Le délice des sens</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
 
     <header>
         <div class="headerPicture">
-            <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+            <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant la note enchantée">
         </div>
     </header>
 
@@ -43,8 +43,12 @@
             <div>
                 <h1>La note enchantée</h1>
             </div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
+
+            <div class="likeButtonSection">
+                <input type="checkbox" id="likeButton">
+                <i class="fa-regular fa-heart emptyHeart"></i>
+                <i class="fa-solid fa-heart fullHeart"></i>
+                <label for="likeButton"></label>
             </div>
         </section>
 
@@ -59,38 +63,53 @@
                 </div>
 
                 <div class="restaurantMenuEntreeElement">
+                    <input type="checkbox" class="selectItem" id="checkboxEntree1">
                     <div class="entreeTitreElement">
-                        <h3>Tartare de thon</h3>
+                        <h3>Ravioles de foie gras</h3>
                     </div>
                     <div class="entreeDescriptifPrix">
                         <div>
-                            <p>Assaisonné au yuzu</p>
+                            <p>Accompagnées de leur crème à la truffe</p>
                         </div>
                         <div class="entreePrix">25€</div>
                     </div>
+                    <label for="checkboxEntree1" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
 
                 <div class="restaurantMenuEntreeElement">
+                    <input type="checkbox" class="selectItem" id="checkboxEntree2">
                     <div class="entreeTitreElement">
-                        <h3>Bouchée de homard croustillant</h3>
+                        <h3>Caviar osciètre</h3>
                     </div>
                     <div class="entreeDescriptifPrix">
                         <div>
-                            <p>Et sa farandole de petits légumes</p>
+                            <p>Sur blini à la farine de blé noir</p>
                         </div>
                         <div class="entreePrix">35€</div>
                     </div>
+                    <label for="checkboxEntree2" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
 
                 <div class="restaurantMenuEntreeElement">
+                    <input type="checkbox" class="selectItem" id="checkboxEntree3">
                     <div class="entreeTitreElement">
-                        <h3>Poulet rôti aux herbes de Provence</h3>
+                        <h3>Homard et espuma de potiron</h3>
                     </div>
                     <div class="entreeDescriptifPrix">
                         <div>
-                            <p>Et sa crème de truffe</p>
+                            <p>Marinés aux zestes d'orange</p>
                         </div>
-                        <div class="entreePrix">40€</div>
+                        <div class="entreePrix">20€</div>
+                    </div>
+                    <label for="checkboxEntree3" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
 
@@ -104,40 +123,56 @@
                 </div>
 
                 <div class="restaurantMenuPlatElement">
+                    <input type="checkbox" class="selectItem" id="checkboxPlat1">
                     <div class="platTitreElement">
-                        <h3>Poulet rôti aux herbes de Provence</h3>
+                        <h3>Noix de coquilles Saint-Jacques</h3>
                     </div>
                     <div class="platDescriptifPrix">
                         <div>
-                            <p>Et sa crème de truffe</p>
+                            <p>Sur lit de purée de céleri-rave</p>
                         </div>
                         <div class="platPrix">40€</div>
                     </div>
+                    <label for="checkboxPlat1" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
 
                 <div class="restaurantMenuPlatElement">
+                    <input type="checkbox" class="selectItem" id="checkboxPlat2">
                     <div class="platTitreElement">
-                        <h3>Langouste rôtie</h3>
+                        <h3>Langoustine poêlée</h3>
                     </div>
                     <div class="platDescriptifPrix">
                         <div>
-                            <p>Et ses légumes de saison</p>
+                            <p>Purée de patate douce</p>
                         </div>
                         <div class="platPrix">35€</div>
                     </div>
+                    <label for="checkboxPlat2" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
 
                 <div class="restaurantMenuPlatElement">
+                    <input type="checkbox" class="selectItem" id="checkboxPlat3">
                     <div class="platTitreElement">
-                        <h3>Côte de bœuf Angus</h3>
+                        <h3>Mijoté de queue de bœuf</h3>
                     </div>
                     <div class="platDescriptifPrix">
                         <div>
-                            <p>Et sa purée de panais</p>
+                            <p>Et riz sauvage aux zestes de citron</p>
                         </div>
-                        <div class="platPrix">44€</div>
+                        <div class="platPrix">45€</div>
+                    </div>
+                    <label for="checkboxPlat3" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
+
             </div>
 
             <!-- Dessert -->
@@ -148,40 +183,56 @@
                 </div>
 
                 <div class="restaurantMenuDessertElement">
+                    <input type="checkbox" class="selectItem" id="checkboxDessert1">
                     <div class="dessertTitreElement">
-                        <h3>Œuf au plat</h3>
+                        <h3>Macaron noisette et chocolat</h3>
                     </div>
                     <div class="dessertDescriptifPrix">
                         <div>
-                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                            <p>Glace au caramel brun et sel de Guérande</p>
                         </div>
-                        <div class="dessertPrix">76€</div>
+                        <div class="dessertPrix">18€</div>
+                    </div>
+                    <label for="checkboxDessert1" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
 
                 <div class="restaurantMenuDessertElement">
+                    <input type="checkbox" class="selectItem" id="checkboxDessert2">
                     <div class="dessertTitreElement">
-                        <h3>Crème brulée</h3>
+                        <h3>Baba au rhum revisité</h3>
                     </div>
                     <div class="dessertDescriptifPrix">
                         <div>
-                            <p>Revisitée</p>
+                            <p>Avec son coulis de citron</p>
                         </div>
                         <div class="dessertPrix">22€</div>
                     </div>
+                    <label for="checkboxDessert2" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
 
                 <div class="restaurantMenuDessertElement">
+                    <input type="checkbox" class="selectItem" id="checkboxDessert3">
                     <div class="dessertTitreElement">
-                        <h3>Tiramisu</h3>
+                        <h3>Tarte au citron meringuée</h3>
                     </div>
                     <div class="dessertDescriptifPrix">
                         <div>
-                            <p>À la noisette</p>
+                            <p>Déstructurée</p>
                         </div>
                         <div class="dessertPrix">23€</div>
                     </div>
+                    <label for="checkboxDessert3" class="selectLabel"></label>
+                    <div id="selectSection">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
+
             </div>
         </article>
 

@@ -1,13 +1,153 @@
-//Main page steps buttons
+//Button like - Page d'accueil
+article .restaurantDetails .likeButtonSection{
+    position: relative;
+    
+    input{
+        display: none;
+    }
 
+    label{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
 
+        /* Quand l'icône est coché */
+        input#likeButton1:checked ~ .emptyHeart{
+            display: none;
+        }
 
-//Menu buttons
+        input#likeButton1:checked ~ .fullHeart{
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
 
+        /* Quand l'icône n'est pas coché */
+        input#likeButton1:not(:checked) ~ .emptyHeart{
+            display: inline-block;
+        }
 
+        input#likeButton1:not(:checked) ~ .fullHeart{
+            display: none;
+        }
 
-//Action buttons
+        /* BOUTON 2 */
 
+         /* Quand l'icône est coché */
+         input#likeButton2:checked ~ .emptyHeart{
+            display: none;
+        }
 
+        input#likeButton2:checked ~ .fullHeart{
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
 
-//Info buttons
+        /* Quand l'icône n'est pas coché */
+        input#likeButton2:not(:checked) ~ .emptyHeart{
+            display: inline-block;
+        }
+
+        input#likeButton2:not(:checked) ~ .fullHeart{
+            display: none;
+        }
+
+        /* BOUTON 3 */
+
+         /* Quand l'icône est coché */
+         input#likeButton3:checked ~ .emptyHeart{
+            display: none;
+        }
+
+        input#likeButton3:checked ~ .fullHeart{
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* Quand l'icône n'est pas coché */
+        input#likeButton3:not(:checked) ~ .emptyHeart{
+            display: inline-block;
+        }
+
+        input#likeButton3:not(:checked) ~ .fullHeart{
+            display: none;
+        }
+
+         /* BOUTON 4 */
+
+         /* Quand l'icône est coché */
+         input#likeButton4:checked ~ .emptyHeart{
+            display: none;
+        }
+
+        input#likeButton4:checked ~ .fullHeart{
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* Quand l'icône n'est pas coché */
+        input#likeButton4:not(:checked) ~ .emptyHeart{
+            display: inline-block;
+        }
+
+        input#likeButton4:not(:checked) ~ .fullHeart{
+            display: none;
+        }
+
+    }
+
+//Button like - Page restaurant
+main.restaurantMenu .likeButtonSection{
+    position: relative;
+    
+    input{
+        display: none;
+    }
+
+    label{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+        /* Quand l'icône est coché */
+        input#likeButton:checked ~ .emptyHeart{
+            display: none;
+        }
+
+        input#likeButton:checked ~ .fullHeart{
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* Quand l'icône n'est pas coché */
+        input#likeButton:not(:checked) ~ .emptyHeart{
+            display: inline-block;
+        }
+
+        input#likeButton:not(:checked) ~ .fullHeart{
+            display: none;
+        }
+
+    }

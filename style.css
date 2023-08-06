@@ -410,6 +410,7 @@ main.restaurantMenu button {
 .restaurantMenuEntreeElement {
   position: relative;
   overflow: hidden;
+  /* Placer un label transparent sur la case à cocher pour la rendre cliquable */
   /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
   On décale seulement l'entreePrix vers la gauche */
   /* Ajout du fond blanc derrière le prix */
@@ -504,6 +505,7 @@ main.restaurantMenu button {
 .restaurantMenuPlatElement {
   position: relative;
   overflow: hidden;
+  /* Placer un label transparent sur la case à cocher pour la rendre cliquable */
   /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
   On décale seulement l'PlatPrix vers la gauche */
   /* Ajout du fond blanc derrière le prix */
@@ -598,6 +600,7 @@ main.restaurantMenu button {
 .restaurantMenuDessertElement {
   position: relative;
   overflow: hidden;
+  /* Placer un label transparent sur la case à cocher pour la rendre cliquable */
   /* Sélecteur pour appliquer l'animation à l'élément en cours de sélection. 
   On décale seulement l'DessertPrix vers la gauche */
   /* Ajout du fond blanc derrière le prix */
@@ -685,6 +688,129 @@ main.restaurantMenu button {
   z-index: -1;
   width: 75px;
   height: 72px;
+}
+
+article .restaurantDetails .likeButtonSection {
+  position: relative;
+  /* Quand l'icône est coché */
+  /* Quand l'icône n'est pas coché */
+  /* BOUTON 2 */
+  /* Quand l'icône est coché */
+  /* Quand l'icône n'est pas coché */
+  /* BOUTON 3 */
+  /* Quand l'icône est coché */
+  /* Quand l'icône n'est pas coché */
+  /* BOUTON 4 */
+  /* Quand l'icône est coché */
+  /* Quand l'icône n'est pas coché */
+}
+article .restaurantDetails .likeButtonSection input {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+article .restaurantDetails .likeButtonSection input#likeButton1:checked ~ .emptyHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton1:checked ~ .fullHeart {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+article .restaurantDetails .likeButtonSection input#likeButton1:not(:checked) ~ .emptyHeart {
+  display: inline-block;
+}
+article .restaurantDetails .likeButtonSection input#likeButton1:not(:checked) ~ .fullHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton2:checked ~ .emptyHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton2:checked ~ .fullHeart {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+article .restaurantDetails .likeButtonSection input#likeButton2:not(:checked) ~ .emptyHeart {
+  display: inline-block;
+}
+article .restaurantDetails .likeButtonSection input#likeButton2:not(:checked) ~ .fullHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton3:checked ~ .emptyHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton3:checked ~ .fullHeart {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+article .restaurantDetails .likeButtonSection input#likeButton3:not(:checked) ~ .emptyHeart {
+  display: inline-block;
+}
+article .restaurantDetails .likeButtonSection input#likeButton3:not(:checked) ~ .fullHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton4:checked ~ .emptyHeart {
+  display: none;
+}
+article .restaurantDetails .likeButtonSection input#likeButton4:checked ~ .fullHeart {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+article .restaurantDetails .likeButtonSection input#likeButton4:not(:checked) ~ .emptyHeart {
+  display: inline-block;
+}
+article .restaurantDetails .likeButtonSection input#likeButton4:not(:checked) ~ .fullHeart {
+  display: none;
+}
+
+main.restaurantMenu .likeButtonSection {
+  position: relative;
+  /* Quand l'icône est coché */
+  /* Quand l'icône n'est pas coché */
+}
+main.restaurantMenu .likeButtonSection input {
+  display: none;
+}
+main.restaurantMenu .likeButtonSection label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+main.restaurantMenu .likeButtonSection input#likeButton:checked ~ .emptyHeart {
+  display: none;
+}
+main.restaurantMenu .likeButtonSection input#likeButton:checked ~ .fullHeart {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+main.restaurantMenu .likeButtonSection input#likeButton:not(:checked) ~ .emptyHeart {
+  display: inline-block;
+}
+main.restaurantMenu .likeButtonSection input#likeButton:not(:checked) ~ .fullHeart {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
