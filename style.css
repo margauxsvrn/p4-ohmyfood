@@ -44,50 +44,6 @@ section.sectionHowItWorks .sectionHowItWorksList .sectionNumber .numberCircle, s
   justify-content: center;
 }
 
-/* Home Page */
-main.restaurantList article {
-  position: relative;
-  height: 251px;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  margin-bottom: 18px;
-}
-main.restaurantList article a {
-  text-decoration: none;
-}
-main.restaurantList article img {
-  width: 100%;
-  height: 68%;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-main.restaurantList article button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-main.restaurantList article .restaurantDetails {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 13px 25px 12px 13px;
-  color: #000000;
-}
-main.restaurantList article .restaurantDetails h3 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-}
-main.restaurantList article .restaurantDetails p {
-  margin: 0;
-  font-weight: 300;
-  margin-top: 5px;
-}
-main.restaurantList article .restaurantDetails i {
-  font-size: 22px;
-  color: #000000;
-}
-
 nav {
   height: 63px;
   padding: 14px 89px;
@@ -159,6 +115,7 @@ header .headerIntro div {
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
+  margin: 0 20px 0 20px;
 }
 header .headerIntro h1 {
   color: #353535;
@@ -403,6 +360,50 @@ main.restaurantMenu button {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Home Page */
+main.restaurantList article {
+  position: relative;
+  height: 251px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 18px;
+}
+main.restaurantList article a {
+  text-decoration: none;
+}
+main.restaurantList article img {
+  width: 100%;
+  height: 68%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+main.restaurantList article button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+main.restaurantList article .restaurantDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 25px 12px 13px;
+  color: #000000;
+}
+main.restaurantList article .restaurantDetails h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+main.restaurantList article .restaurantDetails p {
+  margin: 0;
+  font-weight: 300;
+  margin-top: 5px;
+}
+main.restaurantList article .restaurantDetails i {
+  font-size: 22px;
+  color: #000000;
 }
 
 /* Page restaurant - Animation select plat */
@@ -811,6 +812,64 @@ main.restaurantMenu .likeButtonSection input#likeButton:not(:checked) ~ .emptyHe
 }
 main.restaurantMenu .likeButtonSection input#likeButton:not(:checked) ~ .fullHeart {
   display: none;
+}
+
+/* Page d'accueil */
+@media all and (min-width: 1024px) {
+  header .headerIntro div {
+    font-size: 40px;
+  }
+  header .headerIntro div br {
+    display: none;
+  }
+  /* Section icône fonctionnement */
+  section.sectionHowItWorks {
+    padding: 50px 15%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  section.sectionHowItWorks .stepButton {
+    display: flex;
+  }
+  section.sectionHowItWorks .stepButton .sectionHowItWorksList {
+    margin: 0 24px 0 0;
+    padding: 0 38px 0 18px;
+  }
+  /* Section liste des restaurants */
+  main.restaurantList {
+    padding: 30px 15%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main.restaurantList h2 {
+    margin-bottom: 28px;
+  }
+  main.restaurantList .restaurantListBloc {
+    display: flex;
+  }
+  main.restaurantList .restaurantListBloc article {
+    width: 490px;
+    height: 251px;
+    margin-bottom: 50px;
+  }
+  main.restaurantList .restaurantListBloc article.marginRight {
+    margin-right: 100px;
+  }
+  /* Section footer */
+  footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    width: 100%;
+    justify-content: center;
+  }
+  footer ul.footerMenu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

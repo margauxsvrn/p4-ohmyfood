@@ -3,14 +3,17 @@
 
 @import "utils/mixins";
 @import "utils/placeholders";
-@import "components/restaurantCards";
 
 @import "layout/navbar";
 @import "layout/footer";
 
 @import "pages/homePage";
 @import "pages/restaurants";
+
+@import "components/restaurantCards";
 @import "components/animationsEntree";
 @import "components/animationsPlats";
 @import "components/animationsDesserts";
 @import "components/buttons";
+
+@import "utils/mediaQueries";

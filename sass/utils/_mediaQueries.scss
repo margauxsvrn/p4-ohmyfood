@@ -1,0 +1,73 @@
+/* Page d'accueil */
+
+@media all and (min-width: 1024px) {
+
+    header .headerIntro div{
+        font-size: $desktopTitle;
+    
+        br{
+            display: none;
+        }
+    }
+
+    /* Section icône fonctionnement */
+    section.sectionHowItWorks{
+        padding: 50px 15%;
+        margin-right: auto;
+        margin-left: auto;
+
+        .stepButton{
+            display: flex;
+            
+            .sectionHowItWorksList{
+                margin: 0 24px 0 0;
+                padding: 0 38px 0 18px;
+            }
+        }
+    }
+
+    /* Section liste des restaurants */
+    main.restaurantList {
+        padding: 30px 15%;
+        margin-right: auto;
+        margin-left: auto;
+
+        h2{
+            margin-bottom: 28px;
+        }
+
+        .restaurantListBloc{
+            display: flex;
+
+            article{
+                width: 490px;
+                height: 251px;
+                margin-bottom: 50px;
+                
+                &.marginRight{
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+
+    /* Section footer */
+    footer{
+        display: flex;
+        align-items: center;
+        padding: 30px 60px;
+        width: 100%;
+        justify-content: center;
+
+        ul.footerMenu{
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            align-items: center;
+            margin: 0;
+        }
+    }
+    
+   
+
+}
