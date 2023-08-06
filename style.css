@@ -870,6 +870,13 @@ main.restaurantMenu .likeButtonSection input#likeButton:not(:checked) ~ .fullHea
     align-items: center;
     margin: 0;
   }
+  /* Page restaurant */
+  main.restaurantMenu {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 51px 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
